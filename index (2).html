@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Saty B.
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          saty@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://i.ibb.co/z4SnJTC/20221201-214449.jpg" alt="20221201-214449" border="0" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Saty! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am an advanced 3D modeler with 3 years of experience in animation.
+            My work involves 2D and 3D models and a variety of computer programs 
+            to design animations and characters from the storyboard stage. I have 
+            worked on applications and microservices deployed on IBM Cloud. I am an 
+            advanced user of IBM Watson Services and have worked on IBM Watson Assistant,
+            ShapeNLU,Sentiment Analyzer to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p>4 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <a href="https://ibb.co/d5SrGKq"><img src="https://i.ibb.co/yQDXWs1/Python-Logo.png" alt="Python-Logo" border="0"></a>
+            <h6>Python</h6>
+            <p>3 years experience</p>
+          </div>  
+
+          <div class="skill">
+             <a href="https://ibb.co/CBb6422"><img src="https://i.ibb.co/Wnk07tt/CSS-Logo.png" alt="CSS-Logo" border="0"></a>
+             <h6>CSS</h6>
+             <p>2 years of experience</p>     
+          </div>  
+        <!-- Add more skills here -->
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Illustrations</h3>
+            <ul>
+              <li>Designed illustrations for an online children's book using Procreate, Adobe Photoshop Sketch CSS, Autodesk, JavaScript and IBM Watson Assistant</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Web Design</h3>
+            <ul>
+              <li>Designed a website for a client in the Healthcare System using CSS, Angular, PHP, C#, etc</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Characters Design</h3>
+            <ul>
+              <li>Created game characters for an interactive animated puzzle game using Blender, Stencyl, Construct 2, Graphics Editor and Maya</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I enjoyed my time working with Saty and came to know
+          her as a truly valuable asset to our team. She is honest, 
+          dependable and incredibly hardworking. Beyond that she is 
+          an impressive designer who is able to create absolutely amazing 
+          projects.
+          <span>&#8221;</span>
+        </div>
+
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Saty has been a great experience. 
+          She is talented artist and designer. Along with her 
+          undeniable talent, Saty has always been a joy to work 
+          with. She is a true team player, and always fosters 
+          positive attitute and brings the best out of other employees.
+          <span>&#8221;</span>
+        </div>
+
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Saty has streamlined our creative processes in 
+          3D Graphics and boosted productivity. I was impressed by her 
+          commitment to going an extra mile.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                
+              
+                
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
